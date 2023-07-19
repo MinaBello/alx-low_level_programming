@@ -8,24 +8,20 @@
 int main(void)
 {
 	int count;
-	long int n1 = 1;
-	long int n2 = 2;
-	long int tot;
+	int n1 = 1;
+	int n2 = 2;
+	int tot = 0;
 
-	printf("%lu, ", n1);
-	for (count = 1 ; count < 10 ; count++)
+	while (n2 < 4000000)
 	{
-		if (count == 9)
+		if (n2 % 2 == 0)
 		{
-			printf("%lu\n", n2);
+			tot += n2;
 		}
-		else
-		{
-			printf("%lu, ", n2);
-		}
-		tot = n1 + n2;
+		count = n2 + n1;
 		n1 = n2;
-		n2 = tot;
+		n2 = count;
 	}
+	printf("%d\n", tot);
 	return (0);
 }

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _pow_recursion: function the make number power another number
+ * _pow_recursion - function the make number power another number
  * @x: input integar as Base number
  * @y: input integar as power number
  * Return: power of this numbers

@@ -3,13 +3,14 @@
 int natural_square(int x, int y);
 
 /**
- * _sqrt_resursion - returns natural square root of a number
+ * _sqrt_recursion - returns natural square root of a number
  * @n: integar input number
  * Return: natural square root or -1 if no square root of n
 **/
+
 int _sqrt_recursion(int n)
 {
-	return(natural_square(n, 1));
+	return (natural_square(n, 1));
 }
 
 
@@ -22,6 +23,7 @@ int _sqrt_recursion(int n)
 int natural_square(int x, int y)
 {
 	int s = y * y;
+
 	if (s > x)
 	{
 		return (-1);
@@ -31,4 +33,4 @@ int natural_square(int x, int y)
 		return (y);
 	}
 	return (natural_square(x, y + 1));
-} 
+}
